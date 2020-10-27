@@ -1,4 +1,123 @@
-body{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 50px;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
+
+body{
+  font-family: Lato;
+  color: #777777;
+}
+
+
+/*Header***********************************/
+h2{
+  font-family: oswald;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #555555;
+}
+
+#logo{
+  float: left;
+  font-size: 280%;
+}
+
+#menu{
+  font-size: 110%;
+  list-style-type: none;
+  letter-spacing: 4px;
+}
+/*Below: when I float the nav links from the right i need to change the order from left to right to right to left in the html <ul> so they show in the correct order*/ 
+#menu li{
+  float: right;
+  margin-right: 30px;
+}
+
+#logo, #menu{
+  line-height: 75px;
+}
+
+#menu a{
+  text-decoration: none;
+  color: inherit;  
+}
+
+#menu a:hover{
+  border-bottom: 1px solid #777777;
+}
+
+.active{
+  border-bottom: 1px solid  #777777;
+}
+
+/*Hero Image**************************************/
+#hero-image{
+  height: 600px;
+  width: 100%;
+  background: url(http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/main-image.png) no-repeat center center;
+
+
+/*below is the animation settings*/
+
+  animation-name: hero-zoom;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+
+
+}
+
+/*hero image container (section), defining the size of image container and creating the animation in. Overflow hidden is set to hide the part of the image that becomes outside the container when it is animating*/
+
+#hero-outer{
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/*now the image is sitting below the header, below is the animation css */
+
+
+@keyframes hero-zoom {
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.1);
+  }
+}
+
+/*dont forget to ad the animation name and settings to the #hero-image
+
+
+
+
+Hero text overlay**************************************/
+
+#cover-text, #cover-text h2{
+  color: #ffffff;
+}
+
+#cover-text{
+  font-size: 130%;
+  font-family: oswald;
+  text-transform: uppercase;
+  letter-spacing: 4px; 
+/*size of container*/
+  width: 300px;
+  height: 200px;
+/*inlarging container around text*/
+  padding-top: 40px;
+  padding-left: 10px;
+/*background of container having a opacity of .7*/
+  background-color: rgba(241, 109, 107, .7);
+/*setting the positon of the overlay text box within its parent container, remember to make the container position: relative*/
+  bottom: 30px;
+  right: 120px;
+  position: absolute;
+}
+
+/*club ethos section**************************************/
