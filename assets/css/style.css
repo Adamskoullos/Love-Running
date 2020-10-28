@@ -121,3 +121,133 @@ Hero text overlay**************************************/
 }
 
 /*club ethos section**************************************/
+
+
+/*setting the container size*/
+#club-ethos{
+  height: 600px;
+}
+
+/*positioning each div using their ID, this only positions the div and not the text/content within. Note: add a color background to each div while styling to see what I am working with*/
+#left-about{
+  padding-top: 30px;
+  width: 33%;
+  float: left;
+}
+
+#right-about{
+  padding-top: 30px;
+  width: 33%;
+  float: right;
+}
+
+#center-about{
+  width: 33%;
+  margin: 0 auto;
+}
+/*Now the basic structure of the section is in place, next work on the style. First add elements to divs to start building each div out.
+
+Next stylke the headings for each div by grabbing the class*/
+
+hr{
+  border-top: 1px solid #777777;
+  width: 100%;
+  margin: 5px 0;
+}
+
+
+.left-about-heading{
+  width: 50%;
+  float: right;
+  line-height: 20px;
+  clear: both;
+  margin-bottom: 50px;
+}
+
+.right-about-heading{
+  width: 50%;
+  float: left;
+  line-height: 20px;
+  clear: both;
+  margin-bottom: 50px;
+  text-align: right;
+}
+
+/*aligning the main heading for club ethos to center and adding margin to add space between the hero image*/
+#welcome{
+  text-align: center;
+  margin: 20px 0;
+  font-size: 280%;
+}
+
+#circle-container{
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 1px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+/*The image container and adding the image.  Trick: set image border-radius to be circle as well. The width and height are 100% of parent container*/
+#circle-container-background{
+  background: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/video-mask.png") no-repeat center center;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+/*Running Meet section*************************************************/
+
+#times{
+  background-image: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+#times h2{
+  color: #fafafa;
+}
+
+
+
+#times div{
+  color: #fafafa;
+  background-color: rgba(0,0,0,.6);
+  width: 19%;
+  height: 300px;
+  float: left;
+  padding: 30px 0 0 10px;
+  text-align: center;
+  margin: 2px;
+}
+
+/*footer************************************************************/
+
+footer{
+  height: 150px;
+}
+
+/*This aligns the links within the center of the row across the viewport within the main section container*/
+.social-networks{
+  text-align: center;
+}
+
+
+/*This changes the links from stacking on top of each other to sitting inline next to each other*/
+.social-networks li{
+  display: inline;
+}
+
+/*This applies styling to the individual icons*/
+.social-networks i{
+  font-size: 106%;
+  margin: 1%;
+  padding: 5%;
+  color: #777777;
+}
