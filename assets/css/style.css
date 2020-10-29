@@ -23,6 +23,7 @@ h2{
 #logo{
   float: left;
   font-size: 280%;
+  margin-left: 30px;
 }
 
 #menu{
@@ -147,7 +148,7 @@ Hero text overlay**************************************/
 }
 /*Now the basic structure of the section is in place, next work on the style. First add elements to divs to start building each div out.
 
-Next stylke the headings for each div by grabbing the class*/
+Next style the headings for each div by grabbing the class*/
 
 hr{
   border-top: 1px solid #777777;
@@ -250,4 +251,60 @@ footer{
   margin: 1%;
   padding: 5%;
   color: #777777;
+}
+
+/*Gallery page****************************************************/
+
+#photos{
+  clear: both;
+  line-height: 0;
+  column-count: 4;
+  column-gap: 0px;
+}
+
+#photos img{
+  width: 100%;
+}
+
+
+/*media queries************************************************/
+
+/*Tablet-Home page**********************/
+
+@media screen and (max-width: 1393px){
+  #club-ethos{
+    width: 65%;
+    height: 1200px;
+    margin: 0 auto;
+  }
+  #welcome{
+    padding: 30px 0;
+    margin-top: 0;
+  }
+  #left-about, #right-about{
+    width: 100%;
+    float: left;
+    padding: 0;
+  }
+  #center-about{
+    clear: both;
+    width: 100%;
+    float: left;
+    padding: 0;
+  }
+  hr{
+    display: none;
+  }
+}
+
+/*Responsive header**************/
+
+@media screen and(max-width: 943px;){
+  #menu{
+    clear: left;
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    line-height: 25px;
+  }
 }
